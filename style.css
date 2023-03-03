@@ -1,0 +1,1111 @@
+@font-face {
+    font-family: cooper;
+    src: url(./CooperLightItalicBT.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Cooper;   
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+}
+#page1{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+#nav{
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px 20px;
+    z-index: 9999;
+}
+#left{
+    display: flex;
+    /* align-items: center; */
+    transition: all 0.7s ease;
+   
+}
+#left>h1{
+    font-size: 31px;
+    font-weight:100;
+   
+}
+#left:hover{
+    cursor: pointer;
+    color: grey;
+    transform: scale(.95);
+}
+#dot{
+    width: 5px;
+    height: 5px;
+    background-color: springgreen;
+    margin-top: 24px;
+    margin-left: 3px;
+    border-radius: 50px;
+}
+#nav #right{
+    display: flex;
+    align-items: center;
+}
+#nav #right a{
+    
+    text-decoration: none;
+    margin: 20px;
+    font-size: 20px;
+    font-weight: 100;
+    color: #000;
+}
+#nav #right a:hover{
+    border-bottom: 2px solid springgreen;
+}
+
+#nav #right #rightlast a{
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 50px;
+    padding: 0 18px;
+    position: relative;
+    overflow: hidden;
+    width: 200px;
+}
+#nav #right  #rightlast a h5{
+    white-space: nowrap;
+    display: inline;
+    font-weight: 100;
+    position: relative;
+    z-index: 1;
+}
+#nav #right  #rightlast a img{
+    position: relative;
+    z-index: 1;
+    width: 30%;
+    object-fit: cover;
+    margin-left: 20px;
+}
+#green{
+    width: 100%;
+    height: 100%;
+    background-color: springgreen;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    /* width: -100%; */
+    transition: left 0.7s ease;
+}
+#nav #right  #rightlast:hover #green{
+    cursor: pointer;
+    left: 0%;
+}
+#centre{
+    position:absolute;
+    width: 800px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+}
+#centre>h1{
+    position: relative;
+    font-size: 5.5vw;
+    text-align: center;
+    font-weight: 100;
+}
+#greenline{
+    height: 20px;
+    width: 300px;
+    margin-left: 250px;
+    margin-top: -10px;
+    background-image: url(https://thisisdigital.co.uk/dist/images/underline-green.svg);
+    background-size: cover;
+}
+#firstimg{
+    position: absolute;
+    width: 340px;
+    height: 470px;
+    left: 10%;
+    top: 15%;
+}
+#secondimg{
+    position: absolute;
+    width: 280px;
+    height: 220px;
+    left: 60%;
+    top: 18%;
+}
+#thirdimg{
+    position: absolute;
+    width: 270px;
+    height: 280px;
+    left:73%;
+    top: 53%;
+}
+.centreimages {
+    transition: margin 0.7s ease;
+}
+.centreimages:hover{
+    cursor: pointer;
+    margin-top: -10px;
+}
+#p1container{
+    width: 280px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 72%;
+    left: 40%;
+   
+}
+#p1container #more h3{
+    font-size: 1.5vw;
+    font-weight: 100;
+    margin-left: 20px;
+}
+#p1container:hover{
+    cursor: pointer;
+}
+#p1container #p1arrow{
+    position: relative;
+    height: 35px;
+    width: 100px;
+    border: 1px solid rgba(0, 0, 0, 0.704);
+    padding: 0 12px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    overflow: hidden;
+}
+#p1container #p1arrow img{
+    position: relative;
+    z-index: 3;
+}
+#p1arrow #p1green{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: springgreen;
+    top: 0;
+    left: -100%;
+    transition: left 0.7s ease;
+}
+#p1container:hover #p1green{
+    cursor: pointer;
+    left: 0;
+}
+
+/* page 2 start from here */
+#page2{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#p2container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 900px;
+    height: 400px;
+    /* background-color: yellow; */
+}
+#p2dot{
+    width:15px;
+    height: 15px;
+    border-radius: 50px;
+    background-color: springgreen;
+    margin-top: 5px;
+    margin-right: 8px;
+}
+#p2heading{
+    position: absolute;
+    top: 10%;
+    display: flex;
+}
+#p2heading{
+    font-weight: 100;
+    color: #fff;
+}
+#p2container h2{
+    position: absolute;
+    top: 25%;
+    width: 80%;
+    font-size: 3vw;
+    text-align: center;
+    color: #fff;
+}
+#roundimage{
+    width: 210px;
+    height: 80px;
+    background-image: url("https://thisisdigital.co.uk/dist/images/circle-green.svg");
+    position: absolute;
+    top: 50%;
+    left: 67%;
+}
+#p2about{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 72%;
+    margin-left: 30px;
+    height: 35px;
+    width: 200px;
+}
+#p2about h3{
+    color: #fff;
+    font-size: 1.7vw;
+}
+#p2about:hover{
+    cursor: pointer;
+}
+
+#p2arrow{
+    overflow: hidden;
+    height: 35px;
+    width: 80px;
+    border: 1px solid white;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 20px;
+    position: relative;
+}
+#p2arrow img{
+    position: absolute;
+    z-index: 5;
+}
+#p2arrow #p2green{
+    width: 100%;
+    height: 100%;
+    background-color: springgreen;
+    position: absolute;
+    left: -100%;
+    top: 0;
+    transition: left 0.5s ease;
+}
+#p2about:hover #p2green{
+    cursor: pointer;
+    left: 0;
+}
+
+/* page 3 start from here */
+
+#page3{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+#p3images{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    height: 100%;
+}
+#p3images #p3left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30%;
+    height: 100%;
+}
+#p3images #p3left #lupper{
+    width: 100%;
+    height: 60%;
+    background-image: url(https://images.unsplash.com/photo-1616769364512-1e50e8266907?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1899&q=80);
+    background-size: cover;
+}
+#ldown{
+    width: 100%;
+    height: 35%;
+    background-image: url(https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/This-is-digital-LOW-RES-82.jpg?w=800&h=1200&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1631002337&s=2c36e03420200c6347fed613ee6ed7d3);
+    background-size: cover;
+}
+#p3images #p3right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 65%;
+    height: 100%;
+}
+#rupper{
+    height: 35%;
+    width: 70%;
+    background-image: url(https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/This-is-digital-LOW-RES-10.jpg?w=1200&h=750&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1631002227&s=e9befa27c3cb6b4742db66b7d49131e1);
+    background-size: cover;
+}
+#rdown{
+    height: 61%;
+    width: 100%;
+    background-image: url(https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/This-is-digital-LOW-RES-2.jpg?w=1200&h=1353&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1631002176&s=5d4bc2c79348dc9d5effc2ed0a267366);
+    background-size:cover;
+}
+#p3text{
+    
+    width: 40%;
+    height: 75%;
+} 
+#p3heading{
+    position: relative;
+    width: 100%;
+    height: 150px;
+}
+#p3heading h1{
+    width: 70%;
+    font-size: 3.2vw;
+    color: #000;
+    font-weight: 100;
+    margin-left: 50px;
+}
+#p3greenline{
+    position: absolute;
+    height: 15px;
+    width: 169px;
+    top: 33%;
+    left: 25%;
+    background-image: url(https://thisisdigital.co.uk/dist/images/underline-green.svg);
+    background-size: cover;
+}
+#p3para{
+    width: 100%;
+    height: 300px;
+}
+#p3para h6{
+    width: 80%;
+    margin-left: 50px;
+    font-size: 1.5vw;
+    line-height: 38px;
+}
+#p3container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+    height:80px;
+    margin-left: 30px;
+}
+#p3profile{
+     height: 60px;
+     width: 60px;
+     border-radius: 50px;
+     border: 1px solid black;
+     background-image: url(https://images.unsplash.com/photo-1635205383144-402b892efa23?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1965&q=80);
+     background-size: cover;
+}
+#p3container h3{
+    font-size: 1.7vw;
+    color: #000;
+    font-weight: 100;
+}
+#p3services{
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 45px;
+     width: 170px;
+     border: 1px solid black;
+     border-radius: 50px;
+     padding: 0  10px;
+     overflow: hidden;
+     
+}
+#p3services h4{
+    position: relative;
+    font-weight: 100;
+    color: #000;
+    z-index: 6;
+}
+#p3services img{
+    position: relative;
+    margin-left: 10px;
+    z-index: 6;
+}
+#p3green{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: springgreen;
+    left: -100%;
+    top: 0;
+    transition: left 0.5s ease;
+}
+
+#p3services:hover #p3green{
+    cursor: pointer;
+    left: 0;
+}
+
+/* page 4 from here */
+
+#page4{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+}
+#p4heading{
+    position: relative;
+    width: 60%;
+    height: 30%;
+    margin-top: 50px;
+}
+#p4heading h1{
+    font-size: 4vw;
+    text-align: center;
+    font-weight: 100;
+    color: #000;
+    
+}
+#p4container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 70%;
+}
+#p4roundimage{
+    width: 170px;
+    height: 80px;
+    background-image: url("https://thisisdigital.co.uk/dist/images/circle-green.svg");
+    position: absolute;
+    top: .1%;
+    left: 18%;
+}
+.row{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    height: 150px;
+    width: 100%;
+}
+.column{
+    width: 280px;
+    height: 100%;
+
+}
+.column img{
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+
+}
+
+/* page5 from here */
+#page5{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#p5container{
+    height: 63%;
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+    position: relative;
+}
+.p5box{
+    position: relative;
+    width: 47%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+     
+    
+}
+
+.p5box img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s; */
+
+}
+.backimage{
+    transition: all 1s ease;
+
+}
+
+.p5box:hover .backimage{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.p5box:hover{
+    cursor: pointer;
+}
+.p5boxoverlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.642);
+}
+.p5box h3{
+    position: absolute;
+    font-size: 3vw;
+    width: 80%;
+    top: 55%;
+    left: 8%;
+    font-weight: 100;
+    color: #fff;
+    z-index: 9999;
+}
+.p5left h3{
+    position: absolute;
+    top: 45%;
+
+}
+.p5box .companylogo{
+    position: absolute;
+    width: 150px;
+    height: 40px;
+    top: 5%;
+    left: 10%;
+    color: white;
+    z-index: 9999;
+
+}
+.p5smallbox{
+    position: absolute;
+    top: 80%;
+    left: 8%;
+    width: 55%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 9999;
+}
+.p5smallbox h4{
+    font-family: gilroy;
+    color:#fff;
+    font-size: 1.7vw;
+}
+.p5arrow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 50px;
+    overflow: hidden;
+    position: relative;
+}
+.p5arrow img{
+    position: relative;
+    z-index: 9999;
+    width: 60%;
+    height: 60%;
+    object-fit: cover;
+}
+.p5green{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: springgreen;
+    left: -100%;
+    top: 0;
+    transition: left 0.5s ease;
+   
+}
+
+.p5box:hover .p5green{
+    cursor: pointer;
+    left: 0;
+}
+#p5content{
+    position: absolute;
+    width: 30%;
+    height: 100px;
+    left: 35%;
+    bottom: -28%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+#p5profile{
+    overflow: hidden;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: rgba(135, 207, 235, 0.601);
+}
+#p5profile img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#p5content h3{
+    font-family: gilroy;
+    font-size: 1.7vw;
+    font-weight: 400;
+}
+#p5imagebox{
+    width: 150px;
+    height: 45px;
+    border: 1px solid grey;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+    position: relative;
+}
+#p5imagebox img{
+    position: relative;
+    width: 25%;
+    height: 70%;
+    z-index: 99;
+}
+#p5imagebox h5{
+    position: relative;
+    font-family: gilroy;
+    font-weight: 500;
+    font-size: 1.1vw;
+    color: grey;
+    z-index: 99;
+}
+#p5greeenbox{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: -100%;
+    top: 0;
+    background-color: springgreen;
+    transition: left .5s ease;
+}
+#p5imagebox:hover #p5greeenbox{
+    cursor: pointer;
+    left: 0;
+}
+
+/* page6 from here */
+
+
+
+  .swiper {
+  width: 100%;
+  height: 100vh;
+}
+
+.swiper-slide {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.swiper-slide img {
+    display: block;
+    width: 150px;
+    height: 110px;
+    object-fit: cover;
+  }
+.swiper-slide h3 {
+  font-size: 4vw;
+  width: 60%;
+  font-weight: 100;
+  margin: 35px;
+  }
+.swiper-slide h5 {
+  font-size: 1.5vw;
+  font-family: gilroy;
+  font-weight: 500;
+  padding: 0 20px;
+  position: relative;
+  }
+  .swiper-slide h5::before{
+    content:"";
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border-radius: 50px;
+    left: 0;
+    top: 35%;
+    background-color: springgreen;
+  }
+.swiper-slide h6 {
+  font-size: 1vw;
+  font-family: gilroy;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.6);
+  }
+
+.second img {
+    display: block;
+    width: 350px;
+    height: 40px;
+    object-fit: cover;
+  }
+.third img {
+    display: block;
+    width: 340px;
+    height: 70px;
+    object-fit: cover;
+  }
+.fourth img {
+    display: block;
+    width: 380px;
+    height: 60px;
+    object-fit: cover;
+  }
+.fifth img {
+    display: block;
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+  }
+
+  /* page 7 */
+
+  #fullscreen{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #blackscreen{
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+  }
+  #p7topimage{
+    width: 65%;
+    height: 40%;
+    background-color: pink;
+    position: absolute;
+    position: relative;
+  }
+  #p7topimage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  #p7heading{
+    position:absolute;
+    width: 80%;
+    height: 80px;
+    top: 18%;
+    left: 10%;
+  }
+  #p7heading h4{
+    font-size: 30px;
+    font-family: gilroy;
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+    position: relative;
+  }
+  #p7greenline{
+    position: absolute;
+    height: 9px;
+    width: 95px;
+    background-image: url(https://thisisdigital.co.uk/dist/images/underline-green.svg);
+    background-size: cover;
+    left: 22%;
+    top: 40%;
+}
+#p7logocontainer{
+    width: 50%;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+#p7dp{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    background-color: rgba(135, 207, 235, 0.819);
+    overflow: hidden;
+}
+#p7dp img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#p7logocontainer h5{
+    color: #fff;
+    font-size: 23px;
+    font-family: gilroy;
+    font-weight: 500;
+
+}
+#p7arrowcontainer{
+    width: 250px;
+    height: 45px;
+    border: 1px solid white;
+    border-radius: 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    overflow: hidden;
+
+}
+#p7arrowcontainer h5{
+    font-size: 18px;
+    font-family: gilroy;
+    color: #fff;
+    position: relative;
+    z-index: 999;
+}
+#p7arrowcontainer img{
+    width: 20%;
+    position: relative;
+    z-index: 999;
+}
+#p7fullgreen{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: springgreen;
+    left: -100%;
+    top: 0;
+    transition: left 0.5s ease;
+}
+#p7arrowcontainer:hover #p7fullgreen{
+    cursor: pointer;
+    left: 0;
+}
+  #p7text{
+    width: 100%;
+    height: 55%;
+    position: absolute;
+    top: 25%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+  #p7text .vertical{
+    width: 19%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cl1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+  }
+  .cl1 h1{
+    font-size: 40px;
+    color: #fff;
+    font-family: gilroy;
+    font-weight: 600;
+    margin-left: 30px;
+  }
+  #p7roundimage{
+    width: 160px;
+    height: 63px;
+    background-image: url("https://thisisdigital.co.uk/dist/images/circle-green.svg");
+    position: absolute;
+    top: 27%;
+    left: 7%;
+}
+  .cl1 #p7lowercontainer{
+    width: 63%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 70px;
+    
+  }
+  .cl1 #p7lowercontainer h3{
+    color: #fff;
+    font-family: gilroy;
+    font-size: 20px;
+  }
+  .cl1 #p7lowercontainer #p7arrow {
+    width: 70px;
+    height: 35px;
+    border-radius: 50px;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+   
+  }
+  .cl1 h2:hover{
+    cursor: pointer;
+  }
+  .cl1 #p7lowercontainer #p7arrow img{
+    width: 60%;
+    height: 60%;
+    object-fit: cover;
+    position: relative;
+    z-index: 999;
+  }
+  #p7arrowgreen{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -100%;
+    top: 0;
+    background-color: springgreen;
+    transition: left .5s ease;
+  }
+  .cl1 #p7lowercontainer:hover #p7arrowgreen{
+    cursor: pointer;
+    left: 0;
+  }
+  .vertical h2{
+    color: #fff;
+    font-family: gilroy;
+    margin-top: 50px;
+  }
+  .vertical h5{
+    color: #A9C2C2;
+    font-family: gilroy;
+    margin-top: 15px;
+  }
+
+  .cl2 h5:hover{
+    cursor: pointer;
+    border-bottom: 2px solid springgreen;
+  }
+  .cl3 h5:hover{
+    cursor: pointer;
+    border-bottom: 2px solid springgreen;
+  }
+  .cl5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+  }
+  .cl5row{
+    width: 80%;
+    height: 25%;
+    position: relative;
+  }
+
+  
+  .cl5row .middle{
+    position: absolute;
+    top: 18%;
+  }
+  .cl5row .lower{
+    position: absolute;
+    top: 99%;
+  }
+  .cl5row img{
+    width: 140px;
+    object-fit: cover;
+  }
+  #line{
+    width: 90%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.805);
+    position: absolute;
+    top: 80%;
+  }
+  #p7lowerbox{
+    width: 90%;
+    height: 19%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #p7left{
+    display: flex;
+    /* align-items: center; */
+   
+}
+#p7left>h3{
+    font-size: 31px;
+    font-weight:100;
+    color: #fff;
+   
+}
+
+#p7dot{
+    width: 5px;
+    height: 5px;
+    background-color: springgreen;
+    margin-top: 24px;
+    margin-left: 3px;
+    border-radius: 50px;
+}
+#p7right{
+    display: flex;
+    
+}
+#p7right h6{
+    font-family: gilroy;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    margin: 0 10px;    
+}
+#p7right h6 span{
+    font-family: gilroy;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    border-bottom: 1px solid white;
+}
+#p7right h6 span:hover{
+    cursor: pointer;
+    border-bottom: 1px solid springgreen;
+}
+#p7right #middleh6:hover{
+    cursor: pointer;
+    border-bottom: 1px solid springgreen;
+}
+#p7right i{
+    font-size: 22px;
+    margin: 0 10px;
+    color: white;
+}
+#p7right i:hover{
+    color: springgreen;
+}
