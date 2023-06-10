@@ -9,32 +9,49 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="loco.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <nav class="navbar">
+        <div class="content">
+          <div class="logo">
+            <h1>this is digital</h1>
+            <div id="dot"></div>
+          </div>
+          <ul class="menu-list right">
+          
+            <div class="icon cancel-btn">
+              <i class="fas fa-times"></i>
+            </div>
+            <li><a href="#">Service</a>
+            
+            </li>
+            <li><a href="#">Work</a>
+            </li>
+            <li><a href="#">Aboput</a>
+            </li>
+            <li><a href="#">Culture</a>
+            </li>
+            <li><a href="#">Careers</a>
+            </li>
+            <div id="rightlast">
+              <a href="#">
+                  <h5>Contact Us</h5>
+                  <img src="./icons8-right-arrow-50.png" alt="">
+                  <div id="green"></div>
+          </a>
+    
+          </div>
+          </ul>
+          <div class="icon menu-btn">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </nav>
     <div id="main">
         <div data-scroll data-scroll-speed="-1.5" id="page1">
-            <div id="nav">
-                <div id="left">
-                    <h1>this is digital</h1>
-                    <div id="dot"></div>
-                </div>
-                <div id="right">
-                    <a href="#">Services</a>
-                    <a href="#">Work</a>
-                    <a href="#">About</a>
-                    <a href="#">Culture</a>
-                    <a href="#">Careers</a>
-                    <div id="rightlast">
-                        <a href="#">
-                            <h5>Contact Us</h5>
-                            <img src="./icons8-right-arrow-50.png" alt="">
-                            <div id="green"></div>
-                    </div>
-                    </a>
-                </div>
-            </div>
             <div id="centre">
                 <h1>Digital Performance Solutions</h1>
                 <div id="greenline"></div>
@@ -48,7 +65,8 @@
             <img class="centreimages"
                 src="https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/This-is-digital-LOW-RES-81.jpg?w=1200&h=1200&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1631005177&s=21e4c0bb5ce83f57e69f404637d61265"
                 alt="" id="thirdimg">
-            <div id="p1container">
+           
+                <div id="p1container">
                 <div id="more">
                     <h3>Find out more</h3>
                 </div>
@@ -202,7 +220,7 @@
                     </div>
                     <div class="p5boxoverlay"></div>
                 </div>
-                <div class="p5box ">
+                <div class="p5box bottomhead">
                     <img class="backimage"
                         src="https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/work/work-thumbnail-03.jpg?w=1200&h=675&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1627573623&s=b7070d5239bcfbe21f47b6e42d04043d"
                         alt="">
@@ -367,15 +385,39 @@
                         <div id="p7fullgreen"></div>
                     </div>
                 </div>
+                <div id="p7overlay"></div>
             </div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js" integrity="sha512-tHvUcUQYi35zApvAa5TNR3fNhBQkVtkmWKfacnpxmix4/VTGz1lGjIVyLMp7gLgAvg+aKJjnVKokXJNS5GZ+/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+        integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"
+        integrity="sha512-tHvUcUQYi35zApvAa5TNR3fNhBQkVtkmWKfacnpxmix4/VTGz1lGjIVyLMp7gLgAvg+aKJjnVKokXJNS5GZ+/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script src="script.js"></script>
+    <script>
+        const body = document.querySelector("body");
+        const navbar = document.querySelector(".navbar");
+        const menuBtn = document.querySelector(".menu-btn");
+        const cancelBtn = document.querySelector(".cancel-btn");
+        menuBtn.onclick = ()=>{
+          navbar.classList.add("show");
+          menuBtn.classList.add("hide");
+          body.classList.add("disabled");
+        }
+        cancelBtn.onclick = ()=>{
+          body.classList.remove("disabled");
+          navbar.classList.remove("show");
+          menuBtn.classList.remove("hide");
+        }
+        // window.onscroll = ()=>{
+        //   this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+        // }
+      </script>
 </body>
 
-</html>6
+</html>
